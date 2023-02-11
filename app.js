@@ -14,7 +14,8 @@ const viewsRoutes = require("./src/routes/views.routes");
 // SERVER
 const app = express();
 const server = http.createServer(app);
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.APLICATION_PORT || 3000;
+console.log(process.env.APLICATION_PORT);
 
 // MIDDLEWARES
 app.use(bodyParser.urlencoded({ extended: true }));
