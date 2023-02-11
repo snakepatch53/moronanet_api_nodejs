@@ -2,7 +2,7 @@ CREATE FILE ".env"
 
 Write
 
-```env
+```.env
     APLICATION_PORT = 4000
 
     # Database MYSQL configuration
