@@ -1,0 +1,8 @@
+CREATE DATABASE api_moronanet_nodejs;
+
+CREATE TABLE users (
+    user_id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    user_name VARCHAR(255) NOT NULL,
+    user_email VARCHAR(255) NOT NULL,
+    user_pass VARCHAR(255) NOT NULL
+) ENGINE INNODB;
