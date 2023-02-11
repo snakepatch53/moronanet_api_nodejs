@@ -1,0 +1,17 @@
+- const currentPage = (page) => title.toLowerCase() == page.toLowerCase() ? 'active' : '';
+.sidebar
+    button.burguer-button(onclick="handleBurgerSidebar()")
+        i.fa-solid.fa-bars.text-light
+    .sidebar-header
+        h4.text-truncate.p-2.text-light Moronanet
+    img.logo(src="/static/img/logo.png" alt="Logo")
+    ul.list-group.rounded-0.p-2.border-0
+        a.nav-option.btn.btn-outline-primary.border-0.text-start.p-3.mb-2(href="/panel/home" class=currentPage('home'))
+            i.fa-solid.fa-house
+            span.ms-2 Inicio
+        a.nav-option.btn.btn-outline-primary.border-0.text-start.p-3.mb-2(href="/panel/users" class=currentPage('users'))
+            i.fa-solid.fa-user
+            span.ms-2 Usuarios
+        a.nav-option.btn.btn-outline-primary.border-0.text-start.p-3.mb-2(href="/panel/whatsapp_api" class=currentPage('whatsapp_api'))
+            i.fa-brands.fa-whatsapp
+            span.ms-2 Whatsapp Api

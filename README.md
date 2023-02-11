@@ -9,7 +9,7 @@ Write
     DB_HOST = {{YOUR_HOST_DB}}
     DB_USER = {{YOUR_USER_DB}}
     DB_PASS = {{YOUR_PASS_DB}}
-    DB_DB = {{YOUR_NAME_DB}}
+    DB_NAME = {{YOUR_NAME_DB}}
     DB_PORT = {{YOUR_PORT_DB}}
 ```
 

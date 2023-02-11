@@ -1,17 +1,17 @@
 if (process.env.NODE_ENV !== "production") require("dotenv").config();
 const mysql = require("mysql");
 
-var connection = mysql.createConnection({
+const dataConnection = {
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
     database: process.env.DB_NAME,
     port: process.env.DB_PORT,
-});
+};
 
 function mysql_query(sql) {
+    const connection = mysql.createConnection(dataConnection);
     const promise = new Promise((resolve, reject) => {
-        connection.connect();
         connection.connect(function (err) {
             if (err) {
                 console.log("Error en la Coneccion");
